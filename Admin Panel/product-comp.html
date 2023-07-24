@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Product Component</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+</head>
+
+<body style="background: #f0f0f0;">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-secondary sidebar-shrink bg-opacity-10 bg-body-tertiary">
+            <div class="container-fluid">
+                <a href="" class="brand mx-2">
+                    <img src="https://smartadmin-angular-5.firebaseapp.com/assets/img/logo.png" alt=""
+                        class="w-75 d-md-none d-lg-none">
+                </a>
+                <!-- Sidebar Toggle -->
+                <button class="navbar-toggler my-2 mx-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex align-items-center py-1 me-auto mb-2 mb-lg-0">
+                        <div class="container-fluid d-none d-md-block">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-8 col-md-10">
+                                    <!-- Logo, User Messages, Projects -->
+                                    <div class="row justify-content-center align-items-center">
+                                        <div class="col-2 col-md p-0 me-3 ms-md-0 me-md-0 d-none d-md-block">
+                                            <li class="nav-item">
+                                                <a href="" class="navbar-brand mx-2">
+                                                    <img src="https://smartadmin-angular-5.firebaseapp.com/assets/img/logo.png"
+                                                        alt="" class="" style="width: 150px; margin-right: 100px;">
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div class="col-2 me-5 me-md-2 mx-md-3 pe-0 mt-3 mt-md-0">
+                                            <button
+                                                class="border-0 text-white m-0 p-0 d-flex position-relative bg-secondary bg-opacity-50 px-2 rounded-1">
+                                                <span
+                                                    class="position-absolute text-bg-danger opacity-100 bg-opacity-100 rounded-5 px-1"
+                                                    style="right: -8%; top: -15%;">14</span>
+                                                <i class="bi bi-person fs-2 text-black"></i>
+                                            </button>
+                                        </div>
+                                        <div class="col-6 col-md px-0 mt-3 mt-md-0">
+                                            <p class="m-0 text-uppercase text-secondary text-opacity-75">Projects:</p>
+                                            <select class="form-select bg-transparent border-0 m-0 p-0"
+                                                aria-label="Default select example">
+                                                <option selected>Recent Project</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-4 position-absolute end-0 pe-4 mt-3 mt-md-0">
+                                    <hr class="border w-100 d-md-none my-2">
+                                    <div class="row justify-content-end align-items-center">
+                                        <div class="col-3 px-0">
+                                            <select class="form-select bg-transparent p-1"
+                                                aria-label="Default select example">
+                                                <option selected>English (US)</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="pe-0" style="width: fit-content;">
+                                            <button class="btn bg-white bg-opacity-50 border px-2">
+                                                <i class="bi bi-mic-fill text-secondary"></i>
+                                            </button>
+                                        </div>
+                                        <div class="pe-0" style="width: fit-content;">
+                                            <button class="btn bg-white bg-opacity-50 border px-2">
+                                                <i class="bi bi-arrows-fullscreen text-secondary"></i>
+                                            </button>
+                                        </div>
+                                        <div class="col-5 col-md-4 p-0">
+                                            <li class="nav-item">
+                                                <form class="d-flex ms-md-3" role="search">
+                                                    <div class="input-group d-flex align-items-center">
+                                                        <input
+                                                            class="form-control bg-secondary bg-opacity-10 border-0 py-2"
+                                                            type="search" placeholder="Find report" aria-label="Search">
+                                                        <span
+                                                            class="bg-secondary bg-opacity-10 py-2 px-2 rounded-2 d-none d-md-block"><i
+                                                                class="bi bi-search text-white"></i></span>
+
+                                                    </div>
+                                                </form>
+                                            </li>
+                                        </div>
+                                        <div class="pe-0" style="width: fit-content;">
+                                            <button class="btn bg-white bg-opacity-50 border px-2">
+                                                <i class="bi bi-box-arrow-right text-secondary"></i>
+                                            </button>
+                                        </div>
+                                        <div class="pe-0" style="width: fit-content;">
+                                            <button class="btn bg-white bg-opacity-50 border px-2">
+                                                <i class="bi bi-list text-secondary"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- For mobile -->
+                        <div class="container-fluid my-2 py-3 px-0 mx-0 border-top d-md-none">
+                            <div class="row align-items-center">
+                                <div class="" style="width: fit-content;">
+                                    <button
+                                        class="border-0 text-white m-0 p-0 d-flex position-relative bg-secondary bg-opacity-50 px-2 rounded-1">
+                                        <span
+                                            class="position-absolute text-bg-danger opacity-100 bg-opacity-100 rounded-5 px-1"
+                                            style="right: -8%; top: -15%;">14</span>
+                                        <i class="bi bi-person fs-2 text-black"></i>
+                                    </button>
+                                </div>
+                                <div class="col ps-0">
+                                    <select class="form-select bg-transparent border-0 m-0 p-0"
+                                        aria-label="Default select example">
+                                        <option selected>Recent Project</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <select class="form-select bg-transparent p-1" aria-label="Default select example">
+                                        <option selected>English (US)</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row align-items-center my-2">
+                                <div class="pe-0" style="width: fit-content;">
+                                    <button class="btn bg-white bg-opacity-50 border px-2">
+                                        <i class="bi bi-mic-fill text-secondary"></i>
+                                    </button>
+                                </div>
+                                <div class="pe-0" style="width: fit-content;">
+                                    <button class="btn bg-white bg-opacity-50 border px-2">
+                                        <i class="bi bi-arrows-fullscreen text-secondary"></i>
+                                    </button>
+                                </div>
+                                <div class="col-7">
+                                    <form class="d-flex ms-md-3" role="search">
+                                        <div class="input-group d-flex align-items-center">
+                                            <input class="form-control bg-secondary bg-opacity-10 border-0 py-2"
+                                                type="search" placeholder="Find report" aria-label="Search">
+                                            <span
+                                                class="bg-secondary bg-opacity-10 py-2 px-2 rounded-2 d-none d-md-block">
+                                                <i class="bi bi-search text-white"></i>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="position-relative">
+        <!-- Left Sidebar 18 -->
+        <nav class="navbar navbar-expand-lg m-0 p-0">
+            <div class="container-fluid p-0">
+                <!-- <button class="navbar-toggler my-2 mx-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi-arrow-bar-right fs-3"></i>
+                </button> -->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="container-fluid ps-1">
+                        <div class="row p-0">
+                            <div class="sidebar-content min-vh-100 shadow-lg p-0 text-white"
+                                style="width: 18%; background: #3a3633;">
+                                <!-- Content -->
+                                <a href="#top"
+                                    class="text-decoration-none text-white border py-2 d-flex align-items-center">
+                                    <img src="https://smartadmin-angular-5.firebaseapp.com/assets/img/avatars/sunny.png"
+                                        alt="" class="rounded-circle ms-4 me-2" style="width: 12%;">
+                                    <select class="form-select border-0 w-50 bg-white bg-opacity-75"
+                                        aria-label="Default select example">
+                                        <option selected>Jhone Doe</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </a>
+                                <!-- Dashboard -->
+                                <a class="btn w-100 mt-3 position-relative text-white text-opacity-75 py-3"
+                                    data-bs-toggle="collapse" href="#dashboard" role="button" aria-expanded="false"
+                                    aria-controls="dashboard">
+                                    <i class="bi bi-house-fill position-absolute start-0 ms-3 fs-5"></i>
+                                    <span class="fs-5 position-absolute" style="left: 18%;">Dashboard</span>
+                                    <i class="bi bi-plus position-absolute end-0 me-3 fs-5"></i>
+                                </a>
+                                <div class="collapse" id="dashboard">
+                                    <div class="card card-body rounded-0 bg-transparent">
+                                        Some placeholder content for the collapse component. This panel is hidden by
+                                        default but revealed when the user activates the relevant trigger.
+                                    </div>
+                                </div>
+                                <!-- SmartAdmin Intel -->
+                                <a class="btn w-100 mt-3 position-relative text-white text-opacity-75 py-3"
+                                    data-bs-toggle="collapse" href="#smartadminintel" role="button"
+                                    aria-expanded="false" aria-controls="smartadminintel">
+                                    <i class="bi bi-box-fill position-absolute start-0 ms-3 fs-5"></i>
+                                    <span class="fs-5 position-absolute" style="left: 18%;">SmartAdmin Intel</span>
+                                    <i class="bi bi-plus position-absolute end-0 me-3 fs-5"></i>
+                                </a>
+                                <div class="collapse" id="smartadminintel">
+                                    <div class="card card-body rounded-0 bg-transparent">
+                                        Some placeholder content for the collapse component. This panel is hidden by
+                                        default but revealed when the user activates the relevant trigger.
+                                    </div>
+                                </div>
+                                <!-- Outlook -->
+                                <button class="btn w-100 mt-3 position-relative text-white text-opacity-75 py-3">
+                                    <i class="bi bi-inbox-fill position-absolute start-0 ms-3 fs-5"></i>
+                                    <span class="fs-5 position-absolute" style="left: 18%;">Outlook</span>
+                                    <span
+                                        class="position-absolute bg-secondary bg-opacity-25 end-0 me-3 p-1 rounded-pill">14</span>
+                                </button>
+                                <!-- Graphs -->
+                                <a class="btn w-100 mt-3 position-relative text-white text-opacity-75 py-3"
+                                    data-bs-toggle="collapse" href="#graphs" role="button" aria-expanded="false"
+                                    aria-controls="graphs">
+                                    <i class="bi bi-bar-chart-fill position-absolute start-0 ms-3 fs-5"></i>
+                                    <span class="fs-5 position-absolute" style="left: 18%;">Graphs</span>
+                                    <i class="bi bi-plus position-absolute end-0 me-3 fs-5"></i>
+                                </a>
+                                <div class="collapse" id="graphs">
+                                    <div class="card card-body rounded-0 bg-transparent">
+                                        Some placeholder content for the collapse component. This panel is hidden by
+                                        default but revealed when the user activates the relevant trigger.
+                                    </div>
+                                </div>
+                                <!-- Table -->
+                                <a class="btn w-100 mt-3 position-relative text-white text-opacity-75 py-3"
+                                    data-bs-toggle="collapse" href="#table" role="button" aria-expanded="false"
+                                    aria-controls="table">
+                                    <i class="bi bi-table position-absolute start-0 ms-3 fs-5"></i>
+                                    <span class="fs-5 position-absolute" style="left: 18%;">Table</span>
+                                    <i class="bi bi-plus position-absolute end-0 me-3 fs-5"></i>
+                                </a>
+                                <div class="collapse" id="table">
+                                    <div class="card card-body rounded-0 bg-transparent">
+                                        Some placeholder content for the collapse component. This panel is hidden by
+                                        default but revealed when the user activates the relevant trigger.
+                                    </div>
+                                </div>
+                                <!-- Forms -->
+                                <a class="btn w-100 mt-3 position-relative text-white text-opacity-75 py-3"
+                                    data-bs-toggle="collapse" href="#forms" role="button" aria-expanded="false"
+                                    aria-controls="forms">
+                                    <i class="bi bi-file-earmark-post position-absolute start-0 ms-3 fs-5"></i>
+                                    <span class="fs-5 position-absolute" style="left: 18%;">Forms</span>
+                                    <i class="bi bi-plus position-absolute end-0 me-3 fs-5"></i>
+                                </a>
+                                <div class="collapse" id="forms">
+                                    <div class="card card-body rounded-0 bg-transparent">
+                                        Some placeholder content for the collapse component. This panel is hidden by
+                                        default but revealed when the user activates the relevant trigger.
+                                    </div>
+                                </div>
+                                <!-- UI Elements -->
+                                <a class="btn w-100 mt-3 position-relative text-white text-opacity-75 py-3"
+                                    data-bs-toggle="collapse" href="#uielements" role="button" aria-expanded="false"
+                                    aria-controls="uielements">
+                                    <i class="bi bi-pc-display position-absolute start-0 ms-3 fs-5"></i>
+                                    <span class="fs-5 position-absolute" style="left: 18%;">UI Elements</span>
+                                    <i class="bi bi-plus position-absolute end-0 me-3 fs-5"></i>
+                                </a>
+                                <div class="collapse" id="uielements">
+                                    <div class="card card-body rounded-0 bg-transparent">
+                                        Some placeholder content for the collapse component. This panel is hidden by
+                                        default but revealed when the user activates the relevant trigger.
+                                    </div>
+                                </div>
+                                <!-- Windgets -->
+                                <button class="btn w-100 mt-3 position-relative text-white text-opacity-75 py-3">
+                                    <i class="bi bi-card-heading position-absolute start-0 ms-3 fs-5"></i>
+                                    <span class="fs-5 position-absolute" style="left: 18%;">Widgets</span>
+                                </button>
+                                <!-- Cool features -->
+                                <a class="btn w-100 mt-3 position-relative text-white text-opacity-75 py-3"
+                                    data-bs-toggle="collapse" href="#features" role="button" aria-expanded="false"
+                                    aria-controls="features">
+                                    <i class="bi bi-cloud-fill position-absolute start-0 ms-3 fs-5"></i>
+                                    <span class="fs-5 position-absolute" style="left: 18%;">Cool Features</span>
+                                    <i class="bi bi-plus position-absolute end-0 me-3 fs-5"></i>
+                                </a>
+                                <div class="collapse" id="features">
+                                    <div class="card card-body rounded-0 bg-transparent">
+                                        Some placeholder content for the collapse component. This panel is hidden by
+                                        default but revealed when the user activates the relevant trigger.
+                                    </div>
+                                </div>
+                                <!-- App Views -->
+                                <a class="btn w-100 mt-3 position-relative text-white text-opacity-75 py-3"
+                                    data-bs-toggle="collapse" href="#appviews" role="button" aria-expanded="false"
+                                    aria-controls="appviews">
+                                    <i class="bi bi-puzzle-fill position-absolute start-0 ms-3 fs-5"></i>
+                                    <span class="fs-5 position-absolute" style="left: 18%;">App Views</span>
+                                    <i class="bi bi-plus position-absolute end-0 me-3 fs-5"></i>
+                                </a>
+                                <div class="collapse" id="appviews">
+                                    <div class="card card-body rounded-0 bg-transparent">
+                                        <ul style="text-decoration: none; list-style: none;">
+                                            <li><a href="" style="color: #f0f0f0; text-decoration: none;">
+                                                <i class="fa bi-files-alt"></i>
+                                                <span>Projects</span>
+                                            </a></li>
+                                            <li><a href="" style="color: #f0f0f0; text-decoration: none;">
+                                                <i class="fa bi-paragraph"></i>
+                                                <span>Blog</span>
+                                            </a></li>
+                                            <li><a href="" style="color: #f0f0f0; text-decoration: none;">
+                                                <i class="fa bi-image"></i>
+                                                <span>Gallery</span>
+                                            </a></li>
+                                            <li><a href="" style="color: #f0f0f0; text-decoration: none;">
+                                                <i class="fa bi-chat"></i>
+                                                <span>Forum Layout</span>
+                                                <i class="bi bi-plus position-absolute end-0 me-3 fs-5"></i>
+                                            </a></li>
+                                            <li><a href="" style="color: #f0f0f0; text-decoration: none;">
+                                                <i class="fa bi-person-badge"></i>
+                                                <span>Profile</span>
+                                            </a></li>
+                                            <li><a href="" style="color: #f0f0f0; text-decoration: none;">
+                                                <i class="fa bi-clock"></i>
+                                                <span>Timeline</span>
+                                            </a></li>
+                                        </ul>
+                                      
+                                    </div>
+                                </div>
+                                <!-- E-Commerce -->
+                                <a class="btn w-100 mt-3 position-relative text-white text-opacity-75 py-3"
+                                    data-bs-toggle="collapse" href="#ecommerce" role="button" aria-expanded="false"
+                                    aria-controls="ecommerce">
+                                    <i class="bi bi-cart-fill position-absolute start-0 ms-3 fs-5"></i>
+                                    <span class="fs-5 position-absolute" style="left: 18%;">E-Commerce</span>
+                                    <i class="bi bi-plus position-absolute end-0 me-3 fs-5"></i>
+                                </a>
+                                <div class="collapse" id="ecommerce">
+                                    <div class="card card-body rounded-0 bg-transparent">
+                                        Some placeholder content for the collapse component. This panel is hidden by
+                                        default but revealed when the user activates the relevant trigger.
+                                    </div>
+                                </div>
+                                <!-- Miscellaneous -->
+                                <a class="btn w-100 mt-3 position-relative text-white text-opacity-75 py-3"
+                                    data-bs-toggle="collapse" href="#miscellaneous" role="button" aria-expanded="false"
+                                    aria-controls="miscellaneous">
+                                    <i class="bi bi-windows position-absolute start-0 ms-3 fs-5"></i>
+                                    <span class="fs-5 position-absolute" style="left: 18%;">Miscellaneous</span>
+                                    <i class="bi bi-plus position-absolute end-0 me-3 fs-5"></i>
+                                </a>
+                                <div class="collapse" id="miscellaneous">
+                                    <div class="card card-body rounded-0 bg-transparent">
+                                        Some placeholder content for the collapse component. This panel is hidden by
+                                        default but revealed when the user activates the relevant trigger.
+                                    </div>
+                                </div>
+                                <!-- Chat API -->
+                                <a class="btn w-100 mt-3 position-relative text-white text-opacity-75 py-3"
+                                    data-bs-toggle="collapse" href="#chatapi" role="button" aria-expanded="false"
+                                    aria-controls="chatapi">
+                                    <i class="bi bi-chat-fill position-absolute start-0 ms-3 fs-5"></i>
+                                    <span class="fs-5 position-absolute" style="left: 18%;">
+                                        Smart Chat API
+                                        <sup>beta</sup>
+                                    </span>
+                                    <i class="bi bi-plus position-absolute end-0 me-3 fs-5"></i>
+                                </a>
+                                <div class="collapse" id="chatapi">
+                                    <div class="card card-body rounded-0 bg-transparent">
+                                        Some placeholder content for the collapse component. This panel is hidden by
+                                        default but revealed when the user activates the relevant trigger.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Main content 82 -->
+        <section class="main-content position-absolute end-0 top-0" style="width: 82.5%;">
+            <div class="container-fluid text-white py-2" style="background: #474544;">
+                <div class="row align-items-center">
+                    <div class="" style="width: fit-content;">
+                        <button class="btn bg-secondary p-1 px-2">
+                            <i class="bi bi-arrow-repeat text-white fw-bold"></i>
+                        </button>
+                    </div>
+                    <div class="col pe-0">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a href="#"
+                                        class="text-decoration-none text-white text-opacity-75">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#"
+                                        class="text-decoration-none text-white text-opacity-75">Dashboard</a></li>
+                                <li class="breadcrumb-item active text-white" aria-current="page"
+                                    class="text-decoration-none text-white text-opacity-100">Analytics</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="" style="width: fit-content;">
+                        <button class="btn bg-warning bg-opacity-75 p-1 px-2">
+                            <i class="bi bi-gear-fill text-dark fw-bold"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ribbon -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 80px;">
+                <div class="container-fluid">
+                    <div class="navbar-brand">
+                        <i class="bi bi-house-fill ms-3 fs-5"></i>
+                        <span class="text-3xl">Dashboard</span>
+                        <span class="text-3xl">&gt;</span>
+                        <span class="text-lg">My Dashboard</span>
+                    </div>
+                    <ul class="row align-items-center navbar-nav">
+                        <li class="col px-0 nav-item">
+                            <span class="nav-link">MY INCOME <br><span class="text-primary">$47,171</span></span>
+                        </li>
+                        <li class="col px-0 nav-item border-end">
+                            <span class="nav-link">
+                                <img src="./src/assets/dashboard1.png" alt="" class="">
+                            </span>
+                        </li>
+                        <li class="px-0 nav-item" style="width: fit-content;">
+                            <span class="nav-link">SITE TRAFFIC <br><span class="text-primary">45%</span></span>
+                        </li>
+                        <li class="col px-0 nav-item border-end">
+                            <span class="nav-link">
+                                <img src="./src/assets/dashboard1.png" alt="" class="">
+                            </span>
+                        </li>
+                        <li class="px-0 nav-item" style="width: fit-content;">
+                            <span class="nav-link">SITE ORDERS <br><span class="text-primary">2447</span></span>
+                        </li>
+                        <li class="col px-0 nav-item">
+                            <span class="nav-link">
+                                <img src="./src/assets/dashboard1.png" alt="" class="">
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Projects -->
+<!-- Section: Timeline -->
+<div class="container py-2">
+<style>
+.timeline:before {
+  top: 7px;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #e7e7e7;
+  left: 25px;
+  margin-right: -1.5px;
+}
+
+.timeline > li:after,
+.timeline > li:before {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+
+</style>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <ul class="timeline position-relative p-0" style="list-style: none;">
+                    <li class="mb-5 position-relative">
+                    <div class="timeline-time">just now</div>
+                       
+                       <div class="notify-badge text-white position-absolute text-center m-2 mt-0 rounded-circle" style="background-color: blue; color: #ffffff;width: 40px;height: 40px;font-size: 1.4em;">
+                        <img class="rounded-circle border-primary" src="download (1).jpeg" alt="" style="height: 40px; width: 40px;">    
+                    </div>
+                        
+                        <div class="timeline-panel float-end p-1 position-relative" style=" width: calc(100% - 70px);">
+                            <div class="timeline-heading">
+                                <h5 class="timeline-title text-primary">Trip to Adalaskar</h5>
+                            </div>
+                            <div class="timeline-body" style="margin-bottom: 10px;">
+                                <p>Check out my tour to Adalaskar </p>
+                                <button class="btn btn-primary p-2"><i class="fa bi-files-alt"></i>Read the post</button>
+                            </div>
+                            <div class="timeline-image col-sm-12 col-1">
+                                <img class="p-1" src="images.jpeg" alt="" style="width: 150px; height: 150px;">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-5 position-relative">
+                        <div class="timeline-time">1 min ago</div>
+                        <div class="timeline-badge position-absolute text-center m-2 mt-0 rounded-circle" style="background-color: blue; color: #ffffff;width: 40px;height: 40px;font-size: 1.4em;">
+                        <i class="fa bi-files"></i></div>
+                        <div class="timeline-panel float-end p-1 position-relative" style=" width: calc(100% - 70px);">
+                            <div class="timeline-heading">
+                                <h5 class="timeline-title">Meeting to invite for "GENERAL GNU"[<a href="" style="text-decoration: none;"><i>Go to my calender</i></a>]</h5>
+                            </div>
+                            <div class="timeline-body">
+                                <div class="card w-50 p-sm-3 p-0  col-12">
+                                    <p>Will you be able to attend the meeting <strong>10:00 am</strong> tomorrow?</p>
+                                    <button class="btn btn-light border-light border-dark col-lg-6 col-12 p-0" style="border-color: rgb(134, 137, 141);">Confirm Attendance</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-5 position-relative">
+                        <div class="timeline-time">5 hrs ago</div>
+                        <div class="timeline-badge position-absolute text-center m-2 mt-0 rounded-circle" style="background-color: rgb(5, 71, 40); color: #ffffff;width: 40px;height: 40px;font-size: 1.4em;"><i class="fa bi-0-circle"></i>
+                        </div>
+                        <div class="timeline-panel float-end p-1 position-relative" style=" width: calc(100% - 70px);">
+                            <div class="timeline-heading">
+                                <h5 class="timeline-title text-success">24hrs User Feed</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-5 position-relative">
+                        <div class="timeline-time">yesterday</div>
+                        <div class="timeline-badge position-absolute text-center m-2 mt-0 rounded-circle" style="background-color: blue; color: #ffffff;width: 40px;height: 40px;font-size: 1.4em;"><i class="fa bi-person"></i>
+                        </div>
+                        <div class="timeline-panel float-end p-1 position-relative" style=" width: calc(100% - 70px);">
+                            <div class="timeline-heading">
+                                <h5 class="timeline-title text-primary">Update user information
+                                </h5>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea exercitationem dolores 
+                                    dolorum? A placeat aspernatur quam, dolore quibusdam veniam fugit voluptatibus,
+                                     ea nemo suscipit accusantium culpa neque distinctio, consequatur accusamus.
+                                    <br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto ut voluptatum 
+                                    minus quas tempore labore cupiditate soluta, 
+                                    consequatur quis odio hic nobis repellat laborum iure quo ullam consectetur placeat.
+                                    </p>
+                            </div>
+                            <div class="timeline-image col-sm-12 col-2">
+                                <img class="p-1" src="download.jpeg" alt="" style="width: 100px; height: 100px;">
+                                <img class="p-1" src="images (1).jpeg" alt="" style="width: 100px; height: 100px;">
+                                <img class="p-1" src="download(1).jpeg" alt="" style="width: 100px; height: 100px;">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-5 position-relative">
+                        <div class="timeline-time">12 Mar,2013</div>
+                        <div class="timeline-badge position-absolute text-center m-2 mt-0 rounded-circle" style="background-color: blue; color: #ffffff;width: 40px;height: 40px;font-size: 1.4em;"><i class="fa bi-pen"></i></div>
+                        <div class="timeline-panel float-end p-1 position-relative" style=" width: calc(100% - 70px);">
+                            <div class="timeline-heading">
+                                <h5 class="timeline-title text-primary">Nabi Resource Report</h5>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. quae explicabo minima.</p>
+                                <button class="btn btn-light border-secondary">Read more</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <button class="btn btn-light border-dark align-content-center"><i class="fa bi-arrow-down"></i>LOAD MORE</button>
+                </div>
+                </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
